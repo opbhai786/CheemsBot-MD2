@@ -1,10 +1,9 @@
 //═══════════════════════════════════════════════════════//
 //If you want to recode, reupload
 //or copy the codes/script,
-//pls give credit
-//no credit? i will take action immediately
-//© 2022 Xeon Bot Inc. Doge Bot 
-//Thank you to Lord Buddha, Family and Myself
+//no credit? i will not take action immediately
+//© 2022 TJ Bot Inc. Doge Bot 
+//Thank you to Allah Almighty, Family and Myself
 //════════════════════════════//
 
 const fs = require('fs')
@@ -21,18 +20,18 @@ global.APIKeys = {
 }
 
 //customize settings\\
-global.owner = ['918348225320']
-global.premium = ['918348225320']
-global.ownernomer = '918348225320'
-global.ownername = '🦄Dream Guy Deepak'
-global.botname = 'Cheems Bot MD V2'
-global.footer = '🦄Deepak #bot.'
-global.ig = 'https://github.com/DGDEEPAK'
-global.region = 'India, NorthEast, Mizoram'
-global.sc = 'https://github.com/DGDEEPAK/CheemsBot-MD2'
-global.myweb = 'https://youtube.com/channel/UCmI5wn_THTntx58EookLwUw'
-global.packname = 'Cheems Bot'
-global.author = '🦄Dream Guy Deepak'
+global.owner = ['923008354428']
+global.premium = ['923008354428']
+global.ownernumber = '923008354428'
+global.ownername = 'Đ₳Ɽ₭ ĐΔŘ€ 𝔻𝔼𝕍𝕀𝕃'
+global.botname = 'T҉J҉ 𝕌𝕃𝕋ℝ𝔸'
+global.footer = '𝕌𝕃𝕋ℝ𝔸 #bot.'
+global.ig = 'https://github.com/opbhai786'
+global.region = 'Pakistan, Punjab, Khanpur'
+global.sc = 'https://github.com/opbhai786/CheemsBot-MD2'
+global.myweb = 'https://youtube.com/comingsoon'
+global.packname = '𝕌𝕃𝕋ℝ𝔸 Bot'
+global.author = 'Đ₳Ɽ₭ ĐΔŘ€ 𝔻𝔼𝕍𝕀𝕃'
 global.sessionName = 'session'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
