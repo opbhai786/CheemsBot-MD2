@@ -208,11 +208,11 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
 	
 	//group target by deepak\\
 const reply = (teks) => {
-            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/cheemspic.jpg`),"sourceUrl": "https://chat.whatsapp.com/KguOo9XsRTW2iESYuHzVX1"}}}, { quoted: m})
+            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/cheemspic.jpg`),"sourceUrl": "https://chat.whatsapp.com/JiNuJqtoz8D5aiV1JPYQ71"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/cheemspic.jpg`),"sourceUrl": "https://chat.whatsapp.com/KguOo9XsRTW2iESYuHzVX1"}}}, { quoted: m})
+            XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/cheemspic.jpg`),"sourceUrl": "https://chat.whatsapp.com/JiNuJqtoz8D5aiV1JPYQ71"}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -1232,7 +1232,7 @@ case 'awesomecheck':
 XeonBotInc.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${sange}%*` }, { quoted: m })
 					break
 					case 'charactercheck':
-					//YouTube📍 by deepak⛔\\
+					//YouTube📍 by xeon⛔\\
 					if (!text) return replay(`Tag Someone, Example : ${prefix + command} @Xeon`)
 					const xeony =['Compassionate','Generous','Grumpy','Forgiving','Obedient','Good','Simp','Kind-Hearted','patient','UwU','top, anyway','Helpful']
 					const taky = xeony[Math.floor(Math.random() * xeony.length)]
@@ -1312,7 +1312,7 @@ case 'when':
 XeonBotInc.sendMessage(from, { text: `Question : ${q}\nAnswer : *${kapankah}*` }, { quoted: m })
 					break
 case 'wangy':
-              if (!text) return replay(`Use Text, Example : ${prefix + command} cheems`)
+              if (!text) return replay(`Use Text, Example : ${prefix + command} TJ ULTRA`)
               qq = q.toUpperCase()
               awikwok = `${qq} ${qq} ${qq} ❤️ ❤️ ❤️ WANGY WANGY WANGY WANGY HU HA HU HA HU HA, aaah the smell of hair ${qq} smelly i want to smell the fragrance ${qq} AAAAAAAAH ~ Her hair.... aaah i want to stroke her hair too ~~ AAAAAH ${qq} first time out in anime is cute too ❤️ ❤️ ❤️ so AAAAAAAH ${qq} AAAAAA LUCCUUUUUUUUUUUUU............ ${qq} AAAAAAAAAAAAAAAAAAAAGH ❤️ ❤️ ❤️what ? ${qq} it's not real ? Just HELL you say ? no, no no no no no no no no no no no no no no no !! I DON'T CARE ABOUT THE REALITY, I DON'T CARE. ❤️ ❤️ ❤️ ${qq} me ... ${qq} on the laptop watching me, ${qq} .. you believe in me ? aaaaaaaaaaah thanks ${q} I don't want to give up ${qq} aaaaaah ❤️ ❤️ ❤️ YEAAAAAAAAAAAH I STILL HAVE ${qq} ALSO NOT THE SAME AAAAAAAAAAAAAAH`
              reply(awikwok)
@@ -1328,7 +1328,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
             tex = m.quoted ? m.quoted.text ? m.quoted.text : q ? q : m.text : q ? q : m.text
             reply(tex.replace(/[aiueo]/g, ter).replace(/[AIUEO]/g, ter.toUpperCase()))
             break
-            case 'reactxxx': {
+            case 'react': {
                 if (!isCreator) return replay(`${mess.owner}`)
                 reactionMessage = {
                     react: {
@@ -1770,7 +1770,7 @@ break
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 Cheems Bot Broadcast 」\n\n${text}`
+                      let txt = `「 TJ ULTRA Bot Broadcast 」\n\n${text}`
                       XeonBotInc.send5ButImg(i, txt, XeonBotInc.user.name, global.thumb, btn)
                     }
                 reply(`Successful Sending Broadcast To ${anu.length} Group(s)`)
@@ -1804,7 +1804,7 @@ break
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 Cheems Bot Broadcast 」\n\n${text}`
+                      let txt = `「 TJ ULTRA Bot Broadcast 」\n\n${text}`
                       XeonBotInc.send5ButImg(yoi, txt, XeonBotInc.user.name, global.thumb, btn)
 		}
 		reply('Broadcast Success')
@@ -1852,7 +1852,7 @@ break
                  XeonBotInc.sendTextWithMentions(m.chat, teks, m)
              }
              break
-             case 'listonlinexxx': case 'onlinelistxxx': {
+             case 'listonline': case 'onlinelist': {
                     let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat
                     let online = [...Object.keys(store.presences[id]), botNumber]
                     XeonBotInc.sendText(m.chat, 'Online List:\n\n' + online.map(v => '🐶 @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
@@ -1996,7 +1996,7 @@ break
                 await fs.unlinkSync(media)
             }
             break
-            case 'imagenobgxxx': case 'removebgxxx': case 'remove-bgxxx': {
+            case 'imagenobg': case 'removebg': case 'remove-bg': {
 	    if (!quoted) return replay(`Send/Reply Image With Caption ${prefix + command}`)
 	    if (!/image/.test(mime)) return replay(`Send/Reply Image With Caption ${prefix + command}`)
 	    if (/webp/.test(mime)) return replay(`Send/Reply Image With Caption ${prefix + command}`)
@@ -2034,7 +2034,7 @@ break
             }
             break
         case 'google': {
-                if (!text) return reply(`Example : ${prefix + command} cheems shiba inu`)
+                if (!text) return reply(`Example : ${prefix + command} TJ ULTRA shiba inu`)
                 let google = require('google-it')
                 google({'query': text}).then(res => {
                 let teks = `Google Search Title : ${text}\n\n`
@@ -2048,7 +2048,7 @@ break
                 }
                 break
         case 'gimage': case 'googleimage': {
-        if (!text) return reply(`Example : ${prefix + command} cheems`)
+        if (!text) return reply(`Example : ${prefix + command} TJ ULTRA`)
         let gis = require('g-i-s')
         gis(text, async (error, result) => {
         n = result
@@ -2117,7 +2117,7 @@ break
                 XeonBotInc.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🐶 Title : ${media.title}\n🐶 File Size : ${media.filesizeF}\n🐶 Url : ${isUrl(text)}\n🐶 Ext : MP3\n🐶 Resolution : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
-	    case 'getmusicxxx': {
+	    case 'getmusic': {
                 let { yta } = require('./lib/y2mate')
 		let urls = quoted.text.match(new RegExp(/(?:https?:\/\/)?(?:youtu\.be\/|(?:www\.|m\.)?youtube\.com\/(?:watch|v|embed|shorts)(?:\.php)?(?:\?.*v=|\/))([a-zA-Z0-9\_-]+)/, 'gi'))
                 let quality = args[1] ? args[1] : '128kbps'
@@ -2127,7 +2127,7 @@ break
                 XeonBotInc.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
-            case 'getvideoxxx': {
+            case 'getvideo': {
                 let { ytv } = require('./lib/y2mate')
                 if (!text) throw `Example : ${prefix + command} 1`
                 if (!m.quoted) throw 'Reply Message'
@@ -2166,7 +2166,7 @@ case 'webtonsearch': case 'webtoon':
                     reply(mess.error)
                 })
             break
-            case 'drakorxxx':
+            case 'drakor':
                 if (!text) return reply('What Are You Looking For??')
                 await reply(mess.wait)
                 dgxeon.Drakor(`${text}`).then(async data => {
@@ -2183,7 +2183,7 @@ case 'webtonsearch': case 'webtoon':
                     reply(mess.error)
                 })
             break
-            case 'animexxx':{
+            case 'anime':{
                 if (!text) return reply(`What Anime Are You Looking For??`)
                 await reply(mess.wait)
                 dgxeon.Anime(q).then(async data => {
@@ -2208,7 +2208,7 @@ case 'webtonsearch': case 'webtoon':
                 })
                 }
             break
-            case 'characterxxx': case 'karakterxxx':
+            case 'character': case 'karakter':
                 if (!text) return reply(`What Anime Character Are You Looking For??`)
                 await reply(mess.wait)
                 dgxeon.Character(q).then(async data => {
@@ -2350,13 +2350,13 @@ case 'webtonsearch': case 'webtoon':
             }
             break
             case '3dchristmas': case '3ddeepsea': case 'americanflag': case '3dscifi': case '3drainbow': case '3dwaterpipe': case 'halloweenskeleton': case 'sketch': case 'bluecircuit': case 'space': case 'metallic': case 'fiction': case 'greenhorror': case 'transformer': case 'berry': case 'thunder': case 'magma': case '3dcrackedstone': case '3dneonlight': case 'impressiveglitch': case 'naturalleaves': case 'fireworksparkle': case 'matrix': case 'dropwater':  case 'harrypotter': case 'foggywindow': case 'neondevils': case 'christmasholiday': case '3dgradient': case 'blackpink': case 'gluetext': {
-                if (!text) return reply(`Enter Text, Example : ${prefix + command} Xeon`)
+                if (!text) return reply(`Enter Text, Example : ${prefix + command} your text`)
                 reply(mess.wait)
                 XeonBotInc.sendMessage(m.chat, { image: { url: api('zenz', '/textpro/' + command, { text: text }, 'apikey') }, caption: `Text Pro ${command}` }, { quoted: m})
 	    }
             break
 	    case 'nomerhoki': case 'nomorhoki': {
-                if (!Number(text)) return reply(`Example : ${prefix + command} 916909137213`)
+                if (!Number(text)) return reply(`Example : ${prefix + command} 923008354428`)
                 let anu = await primbon.nomer_hoki(Number(text))
                 if (anu.status == false) return reply(anu.message)
                 XeonBotInc.sendText(m.chat, `🐶 *Phone Number :* ${anu.message.nomer_hp}\n🐶 *Shuzi Angka Figures :* ${anu.message.angka_shuzi}\n🐶 *Positive Energy :*\n- Riches : ${anu.message.energi_positif.kekayaan}\n- Health : ${anu.message.energi_positif.kesehatan}\n- Love : ${anu.message.energi_positif.cinta}\n- Stability : ${anu.message.energi_positif.kestabilan}\n- Percentage : ${anu.message.energi_positif.persentase}\n🐶 *Negative Energy :*\n- Dispute : ${anu.message.energi_negatif.perselisihan}\n- Lost : ${anu.message.energi_negatif.kehilangan}\n- Catastrophe : ${anu.message.energi_negatif.malapetaka}\n- Destruction : ${anu.message.energi_negatif.kehancuran}\n- Percentage : ${anu.message.energi_negatif.persentase}`, m)
@@ -2849,7 +2849,7 @@ To Download Media, Please Click One Of The Buttons Below Or Enter The ytmp3/ytmp
 		XeonBotInc.sendMessage(m.chat, { audio: { url: result.audio }, fileName: result.title+'.mp3', mimetype: 'audio/mpeg' }, { quoted: m })
 	    }
 	    break
-		case 'iqraxxx': {
+		case 'iqra': {
 		oh = `Example : ${prefix + command} 3\n\nIQRA Which Is Available : 1,2,3,4,5,6`
 		if (!text) return reply(oh)
 		yy = await getBuffer(`https://islamic-api-indonesia.herokuapp.com/api/data/pdf/iqra${text}`)
@@ -2876,7 +2876,7 @@ Available Formats: pdf, docx, pptx, xlsx`)
 		}
 		}
 		break
-		case 'hadisxxx': case 'hadistxxx': {
+		case 'hadith': case 'hadis': {
 		if (!args[0]) return reply(`Example:
 ${prefix + command} bukhari 1
 ${prefix + command} abu-daud 1
@@ -2912,7 +2912,7 @@ ${id}`)
 		}
 		}
 		break
-		case 'alquranxxx': {
+		case 'alquran': {
 		if (!args[0]) return reply(`Usage Examples:\n${prefix + command} 1 2\n\nThen The Result Is Surah Al-Fatihah Verse 2 Along With The Audio, And The Verse Is Just 1`)
 		if (!args[1]) return reply(`Usage Examples:\n${prefix + command} 1 2\n\nThen The Result Is Surah Al-Fatihah Verse 2 Along With The Audio, And The Verse Is Just 1`)
 		let res = await fetchJson(`https://islamic-api-indonesia.herokuapp.com/api/data/quran?surah=${args[0]}&ayat=${args[1]}`)
@@ -2925,7 +2925,7 @@ ${id}`)
 		XeonBotInc.sendMessage(m.chat, {audio: { url: res.result.data.audio.primary }, mimetype: 'audio/mpeg'}, { quoted : m })
 		}
 		break
-		case 'tafsirsurahxxx': {
+		case 'tafsirsurah': {
 		if (!args[0]) return reply(`Usage Examples:\n${prefix + command} 1 2\n\nThen The Result Is The Interpretation Of Surah Al-Fatihah Verse 2`)
 		if (!args[1]) return reply(`Usage Examples:\n${prefix + command} 1 2\n\nThen The Result Is The Interpretation Of Surah Al-Fatihah Verse 2`)
 		let res = await fetchJson(`https://islamic-api-indonesia.herokuapp.com/api/data/quran?surah=${args[0]}&ayat=${args[1]}`)
@@ -3256,7 +3256,7 @@ case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite'
 					XeonBotInc.sendImage(m.chat, data.url, mess.success, m)
 					})
 					break
-case "setmenuxxx": 
+case "setmenu": 
 if (!text) return reply("1. image\n2. list\n3. catalog\n\nExample .setmenu image")
 if (q == "image") {
 typemenu = 'image'
@@ -3271,12 +3271,12 @@ reply("Success Changing Menu To "+q)
 break
                     case 'bug': case 'report': {
                     	if(!text) return reply(`Enter The Bug\n\nExample: ${command} Menu Error`)
-                    	XeonBotInc.sendMessage(`916909137213@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
+                    	XeonBotInc.sendMessage(`923008354428@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
 Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
                     break
-                    case 'tes': case 'test': case 'alive': case 'bot': case 'robot': case 'cheems': case 'doge':{
+                    case 'tes': case 'test': case 'alive': case 'bot': case 'robot': case 'TJ ULTRA': case 'doge':{
                            	timestampe = speed();
 latensie = speed() - timestampe
  anu = ` `
@@ -3293,14 +3293,14 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ││✑  🐶🖐️!!
 │└───────────────┈ ⳹
 │ 「 BOT INFO 」
-│✙ 🦄𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│✙ 🦄𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│✙ 🦄𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│✙ 🦄𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│✙ 🦄𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
-│✙ 🦄𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│✙ 🦄𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│✙ 🦄𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
+│✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+│✙ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+│✙ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
+│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
+│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
+│✙ 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
+│✙ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
+│✙ 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
    │✑  Please Select The Button Below
    └───────────────┈ ⳹`,
@@ -3353,14 +3353,14 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ┌┤✑  How Are You? 😄
 │└───────────────┈ ⳹
 │ 「 BOT INFO 」
-│✙ 🦄𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│✙ 🦄𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│✙ 🦄𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│✙ 🦄𝗢𝘄??𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│✙ 🦄𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
-│✙ 🦄𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│✙ 🦄𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│✙ 🦄𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
+│✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+│✙ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+│✙ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
+│✙ 𝗢𝘄??𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
+│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
+│✙ 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
+│✙ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
+│✙ 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
    │✑  Please Select The Button Below
    └───────────────┈ ⳹`,
@@ -3522,291 +3522,291 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
     case 'donasi': case 'donate': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                XeonBotInc.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6ba2aed566865a068e91f.jpg' }, caption: `*Hi Bro ${m.pushName}*\n\nDonate Me : \n\n🐶 Fampay : https://telegra.ph/file/6ba2aed566865a068e91f.jpg\n🐶 Paytm : https://telegra.ph/file/577bd4f28d90ca2c7f369.jpg\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/918348225320 (Click To Contact)` }, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { image: { url: 'https://cdn.discordapp.com/attachments/954799087302111352/977927595981172846/unknown.png' }, caption: `*Hi Bro ${m.pushName}*\n\nDonate Me : \n\n🐶 JazzCash : +923033224848\n🐶 Bitcoin : 39kHyNkg1tu6fZMukYFdtZbZ2tuGudPtn6\n\nIf You Want To Donate, Talk With The Owner First\nwa.me/923008354428 (Click To Contact)` }, { quoted: m })
             }
             break
             case 'sc': case 'script': {
-                reply(`GitHub : http://wa.me/918348225320\n Dont Forget To Give Star\n\nYouTube : ${myweb}\nDont Forget To Watch Tutorial`)
+                reply(`GitHub : http://wa.me/923008354428\n Dont Forget To Give Star\n\nYouTube : ${myweb}\nDont Forget To Watch Tutorial`)
             }
             break
 case 'allmenu': {
   	anu = `
 ┏━「 *${botname}* 」━━⭓ 
 ┃╔═══════✪「 MAIN 」
-┃╠🦄 ${prefix}alive
-┃╠🦄 ${prefix}script
-┃╠🦄 ${prefix}speedtest
-┃╠🦄 ${prefix}ping
-┃╠🦄 ${prefix}owner
-┃╠🦄 ${prefix}menu
-┃╠🦄 ${prefix}delete
-┃╠🦄 ${prefix}chatinfo
-┃╠🦄 ${prefix}quoted
-┃╠🦄 ${prefix}listpc
-┃╠🦄 ${prefix}listgc
-┃╠🦄 ${prefix}donate
-┃╠🦄 ${prefix}report [bug]
+┃╠ ${prefix}alive
+┃╠ ${prefix}script
+┃╠ ${prefix}speedtest
+┃╠ ${prefix}ping
+┃╠ ${prefix}owner
+┃╠ ${prefix}menu
+┃╠ ${prefix}delete
+┃╠ ${prefix}chatinfo
+┃╠ ${prefix}quoted
+┃╠ ${prefix}listpc
+┃╠ ${prefix}listgc
+┃╠ ${prefix}donate
+┃╠ ${prefix}report [bug]
 ┃╠═══════✪「 OWNER 」	
-┃╠🐶 ${prefix}chat [option]
-┃╠🐶 ${prefix}join [link]
-┃╠🐶 ${prefix}leave
-┃╠🐶 ${prefix}block [user]
-┃╠🐶 ${prefix}unblock [user]
-┃╠🐶 ${prefix}bcgroup [text]
-┃╠🐶 ${prefix}bcall [text]
-┃╠🐶 ${prefix}setppbot [image]
-┃╠🐶 ${prefix}setexif
+┃╠ ${prefix}chat [option]
+┃╠ ${prefix}join [link]
+┃╠ ${prefix}leave
+┃╠ ${prefix}block [user]
+┃╠ ${prefix}unblock [user]
+┃╠ ${prefix}bcgroup [text]
+┃╠ ${prefix}bcall [text]
+┃╠ ${prefix}setppbot [image]
+┃╠ ${prefix}setexif
 ┃╠═══════✪「 GROUP 」	        
-┃╠🦄${prefix}grouplink
-┃╠🦄${prefix}ephemeral [option]
-┃╠🦄${prefix}setgcpp [image]
-┃╠🦄${prefix}setname [text]
-┃╠🦄${prefix}setdesc [text]
-┃╠🦄${prefix}group [text]
-┃╠🦄${prefix}editinfo [option]
-┃╠🦄${prefix}add [user]
-┃╠🦄${prefix}kick [reply/tag]
-┃╠🦄${prefix}hidetag [text]
-┃╠🦄${prefix}tagall [text]
-┃╠🦄${prefix}antilink [on/off]
-┃╠🦄${prefix}mute [on/off]
-┃╠🦄${prefix}promote [reply/tag]
-┃╠🦄${prefix}demote [reply/tag]
-┃╠🦄${prefix}vote
-┃╠🦄${prefix}devote
-┃╠🦄${prefix}upvote
-┃╠🦄${prefix}checkvote
-┃╠🦄${prefix}delvote
+┃╠${prefix}grouplink
+┃╠${prefix}ephemeral [option]
+┃╠${prefix}setgcpp [image]
+┃╠${prefix}setname [text]
+┃╠${prefix}setdesc [text]
+┃╠${prefix}group [text]
+┃╠${prefix}editinfo [option]
+┃╠${prefix}add [user]
+┃╠${prefix}kick [reply/tag]
+┃╠${prefix}hidetag [text]
+┃╠${prefix}tagall [text]
+┃╠${prefix}antilink [on/off]
+┃╠${prefix}mute [on/off]
+┃╠${prefix}promote [reply/tag]
+┃╠${prefix}demote [reply/tag]
+┃╠${prefix}vote
+┃╠${prefix}devote
+┃╠${prefix}upvote
+┃╠${prefix}checkvote
+┃╠${prefix}delvote
 ┃╠═══════✪「 RPG 」	
-┃╠🐕${prefix}hunting
-┃╠🐕${prefix}mining
-┃╠🐕${prefix}heal
-┃╠🐕${prefix}userlimit
-┃╠🐕${prefix}profile
-┃╠🐕${prefix}inventory
-┃╠🐕${prefix}leaderboard
-┃╠🐕${prefix}buy [option]
-┃╠🐕${prefix}sell [option]
+┃╠${prefix}hunting
+┃╠${prefix}mining
+┃╠${prefix}heal
+┃╠${prefix}userlimit
+┃╠${prefix}profile
+┃╠${prefix}inventory
+┃╠${prefix}leaderboard
+┃╠${prefix}buy [option]
+┃╠${prefix}sell [option]
 ┃╠═════✪「 DOWNLOADER 」	
-┃╠🦚${prefix}tiktoknowm [url]
-┃╠🦚${prefix}tiktokwm [url]
-┃╠🦚${prefix}tiktokmp3 [url]
-┃╠🦚${prefix}instagram [url
-┃╠🦚${prefix}twitter [url]
-┃╠🦚${prefix}twittermp3 [url]
-┃╠🦚${prefix}facebook [url]
-┃╠🦚${prefix}pinterestdl [url]
-┃╠🦚${prefix}ytmp3 [url|quality]
-┃╠🦚${prefix}ytmp4 [url|quality]
-┃╠🦚${prefix}getmusic [yt link]
-┃╠🦚${prefix}getvideo [yt link]
-┃╠🦚${prefix}umma [query]
-┃╠🦚${prefix}joox [query]
-┃╠🦚${prefix}soundcloud [url]
+┃╠${prefix}tiktoknowm [url]
+┃╠${prefix}tiktokwm [url]
+┃╠${prefix}tiktokmp3 [url]
+┃╠${prefix}instagram [url
+┃╠${prefix}twitter [url]
+┃╠${prefix}twittermp3 [url]
+┃╠${prefix}facebook [url]
+┃╠${prefix}pinterestdl [url]
+┃╠${prefix}ytmp3 [url|quality]
+┃╠${prefix}ytmp4 [url|quality]
+┃╠${prefix}getmusic [yt link]
+┃╠${prefix}getvideo [yt link]
+┃╠${prefix}umma [query]
+┃╠${prefix}joox [query]
+┃╠${prefix}soundcloud [url]
 ┃╠═══════✪「 SEARCHER 」	
-┃╠🐦${prefix}play [query]
-┃╠🐦${prefix}song [query]
-┃╠🐦${prefix}yts [query]
-┃╠🐦${prefix}google [query]
-┃╠🐦${prefix}gimage [query]
-┃╠🐦${prefix}pinterest [query]
-┃╠🐦${prefix}wallpaper [query]
-┃╠🐦${prefix}wikimedia [query]
-┃╠🐦${prefix}ytsearch [query]
-┃╠🐦${prefix}ringtone [query]
-┃╠🐦${prefix}stalk [option|id]
-┃╠🐦${prefix}webtoon [query]
+┃╠${prefix}play [query]
+┃╠${prefix}song [query]
+┃╠${prefix}yts [query]
+┃╠${prefix}google [query]
+┃╠${prefix}gimage [query]
+┃╠${prefix}pinterest [query]
+┃╠${prefix}wallpaper [query]
+┃╠${prefix}wikimedia [query]
+┃╠${prefix}ytsearch [query]
+┃╠${prefix}ringtone [query]
+┃╠${prefix}stalk [option|id]
+┃╠${prefix}webtoon [query]
 ┃╠═══════✪「 RANDOM 」
-┃╠🐰${prefix}coffee
-┃╠🐰${prefix}animequote (indo)
-┃╠🐰${prefix}couplepp
-┃╠🐰${prefix}waifu
-┃╠🐰${prefix}husbu
-┃╠🐰${prefix}neko
-┃╠🐰${prefix}shinobu
-┃╠🐰${prefix}megumin
-┃╠🐰${prefix}waifus (nsfw)
-┃╠🐰${prefix}nekos (nsfw)
-┃╠🐰${prefix}trap (nsfw)
-┃╠🐰${prefix}blowjob (nsfw)
+┃╠${prefix}coffee
+┃╠${prefix}animequote (indo)
+┃╠${prefix}couplepp
+┃╠${prefix}waifu
+┃╠${prefix}husbu
+┃╠${prefix}neko
+┃╠${prefix}shinobu
+┃╠${prefix}megumin
 ┃╠════✪「 RANDOM ANIME 」
-┃╠☣️${prefix}loli
-┃╠☣️${prefix}bully
-┃╠☣️${prefix}cuddle
-┃╠☣️${prefix}cry
-┃╠☣️${prefix}hug
-┃╠☣️${prefix}awoo
-┃╠☣️${prefix}kiss
-┃╠☣️${prefix}lick
-┃╠☣️${prefix}pat
-┃╠☣️${prefix}smug
-┃╠☣️${prefix}bonk
-┃╠☣️${prefix}yeet
-┃╠☣️${prefix}blush
-┃╠☣️${prefix}smile
-┃╠☣️${prefix}wave
-┃╠☣️${prefix}highfive
-┃╠☣️${prefix}handhold
-┃╠☣️${prefix}nom
-┃╠☣️${prefix}glomp
-┃╠☣️${prefix}bite
-┃╠☣️${prefix}slap
-┃╠☣️${prefix}kill
-┃╠☣️${prefix}happy
-┃╠☣️${prefix}wink
-┃╠☣️${prefix}poke
-┃╠☣️${prefix}dance
-┃╠☣️${prefix}cringe
+┃╠${prefix}loli
+┃╠${prefix}bully
+┃╠${prefix}cuddle
+┃╠${prefix}cry
+┃╠${prefix}hug
+┃╠${prefix}awoo
+┃╠${prefix}kiss
+┃╠${prefix}lick
+┃╠${prefix}pat
+┃╠${prefix}smug
+┃╠${prefix}bonk
+┃╠${prefix}yeet
+┃╠${prefix}blush
+┃╠${prefix}smile
+┃╠${prefix}wave
+┃╠${prefix}highfive
+┃╠${prefix}handhold
+┃╠${prefix}nom
+┃╠${prefix}glomp
+┃╠${prefix}bite
+┃╠${prefix}slap
+┃╠${prefix}kill
+┃╠${prefix}happy
+┃╠${prefix}wink
+┃╠${prefix}poke
+┃╠${prefix}dance
+┃╠${prefix}cringe
 ┃╠═══════✪「 TEXT PRO」
-┃╠🔭 ${prefix}3dchristmas [txt]
-┃╠🔭 ${prefix}3ddeepsea [txt]
-┃╠🔭 ${prefix}americanflag [txt]
-┃╠🔭 ${prefix}3dscifi [txt]
-┃╠🔭 ${prefix}3drainbow [txt]
-┃╠🔭 ${prefix}3dwaterpipe [txt]
-┃╠🔭 ${prefix}halloweenskeleton [txt]
-┃╠🔭 ${prefix}sketch [txt]
-┃╠🔭 ${prefix}bluecircuit [txt]
-┃╠🔭 ${prefix}space [txt]
-┃╠🔭 ${prefix}metallic [txt]
-┃╠🔭 ${prefix}fiction [txt]
-┃╠🔭 ${prefix}greenhorror [txt]
-┃╠🔭 ${prefix}transformer [txt]
-┃╠🔭 ${prefix}berry [txt]
-┃╠🔭 ${prefix}thunder [txt]
-┃╠🔭 ${prefix}magma [txt]
-┃╠🔭 ${prefix}3dcrackedstone [txt]
-┃╠🔭 ${prefix}3dneonlight [txt]
-┃╠🔭 ${prefix}impressiveglitch [txt]
-┃╠🔭 ${prefix}naturalleaves [txt]
-┃╠🔭 ${prefix}fireworksparkle [txt]
-┃╠🔭 ${prefix}matrix [txt]
-┃╠🔭 ${prefix}dropwater [txt]
-┃╠🔭 ${prefix}harrypotter [txt]
-┃╠🔭 ${prefix}foggywindow [txt]
-┃╠🔭 ${prefix}neondevils [txt]
-┃╠🔭 ${prefix}christmasholiday [txt]
-┃╠🔭 ${prefix}3dgradient [txt]
-┃╠🔭 ${prefix}blackpink [txt]
-┃╠🔭 ${prefix}gluetext [txt]
+┃╠ ${prefix}3dchristmas [txt]
+┃╠ ${prefix}3ddeepsea [txt]
+┃╠ ${prefix}americanflag [txt]
+┃╠ ${prefix}3dscifi [txt]
+┃╠ ${prefix}3drainbow [txt]
+┃╠ ${prefix}3dwaterpipe [txt]
+┃╠ ${prefix}halloweenskeleton [txt]
+┃╠ ${prefix}sketch [txt]
+┃╠ ${prefix}bluecircuit [txt]
+┃╠ ${prefix}space [txt]
+┃╠ ${prefix}metallic [txt]
+┃╠ ${prefix}fiction [txt]
+┃╠ ${prefix}greenhorror [txt]
+┃╠ ${prefix}transformer [txt]
+┃╠ ${prefix}berry [txt]
+┃╠ ${prefix}thunder [txt]
+┃╠ ${prefix}magma [txt]
+┃╠ ${prefix}3dcrackedstone [txt]
+┃╠ ${prefix}3dneonlight [txt]
+┃╠ ${prefix}impressiveglitch [txt]
+┃╠ ${prefix}naturalleaves [txt]
+┃╠ ${prefix}fireworksparkle [txt]
+┃╠ ${prefix}matrix [txt]
+┃╠ ${prefix}dropwater [txt]
+┃╠ ${prefix}harrypotter [txt]
+┃╠ ${prefix}foggywindow [txt]
+┃╠ ${prefix}neondevils [txt]
+┃╠ ${prefix}christmasholiday [txt]
+┃╠ ${prefix}3dgradient [txt]
+┃╠ ${prefix}blackpink [txt]
+┃╠ ${prefix}gluetext [txt]
 ┃╠═══════✪「 FUN 」
-┃╠🐿️ ${prefix}how [text
-┃╠🐿️ ${prefix}when [text]
-┃╠🐿️ ${prefix}is [text]
-┃╠🐿️ ${prefix}what [text]
-┃╠🐿️ ${prefix}can [text]
-┃╠🐿️ ${prefix}rate [text]
-┃╠🐿️ ${prefix}wangy [text]
-┃╠🐿️ ${prefix}beautifulcheck [tag]
-┃╠🐿️ ${prefix}awesomecheck [tag]
-┃╠🐿️ ${prefix}prettycheck [tag]
-┃╠🐿️ ${prefix}lesbiancheck [tag]
-┃╠🐿️ ${prefix}gaycheck [tag]
-┃╠🐿️ ${prefix}cutecheck [tag]
-┃╠🐿️ ${prefix}uglycheck [tag]
-┃╠🐿️ ${prefix}hornycheck [tag]
-┃╠🐿️ ${prefix}charactercheck [tag]
-┃╠🐿️ ${prefix}lovelycheck [tag]
-┃╠🐿️ ${prefix}couple
-┃╠🐿️ ${prefix}mysoulmate
-┃╠🐿️ ${prefix}hot
-┃╠🐿️ ${prefix}sexy
-┃╠🐿️ ${prefix}kind
-┃╠🐿️ ${prefix}handsome
-┃╠🐿️ ${prefix}beautiful
-┃╠🐿️ ${prefix}cute
-┃╠🐿️ ${prefix}pretty
-┃╠🐿️ ${prefix}lesbian
-┃╠🐿️ ${prefix}noob
-┃╠🐿️ ${prefix}bastard
-┃╠🐿️ ${prefix}foolish
-┃╠🐿️ ${prefix}nerd
-┃╠🐿️ ${prefix}asshole
-┃╠🐿️ ${prefix}gay
-┃╠🐿️ ${prefix}smart
-┃╠🐿️ ${prefix}stubble
-┃╠🐿️ ${prefix}dog
-┃╠🐿️ ${prefix}horny
-┃╠🐿️ ${prefix}cunt
-┃╠🐿️ ${prefix}wibu
-┃╠🐿️ ${prefix}tictactoe
-┃╠🐿️ ${prefix}delttt
-┃╠🐿️ ${prefix}guess [option]
-┃╠🐿️ ${prefix}math [mode]
-┃╠🐿️ ${prefix}suitpvp [tag]
+┃╠ ${prefix}how [text
+┃╠ ${prefix}when [text]
+┃╠ ${prefix}is [text]
+┃╠ ${prefix}what [text]
+┃╠ ${prefix}can [text]
+┃╠ ${prefix}rate [text]
+┃╠ ${prefix}wangy [text]
+┃╠ ${prefix}beautifulcheck [tag]
+┃╠ ${prefix}awesomecheck [tag]
+┃╠ ${prefix}prettycheck [tag]
+┃╠ ${prefix}lesbiancheck [tag]
+┃╠ ${prefix}gaycheck [tag]
+┃╠ ${prefix}cutecheck [tag]
+┃╠ ${prefix}uglycheck [tag]
+┃╠ ${prefix}hornycheck [tag]
+┃╠ ${prefix}charactercheck [tag]
+┃╠ ${prefix}lovelycheck [tag]
+┃╠ ${prefix}couple
+┃╠ ${prefix}mysoulmate
+┃╠ ${prefix}hot
+┃╠ ${prefix}sexy
+┃╠ ${prefix}kind
+┃╠ ${prefix}handsome
+┃╠ ${prefix}beautiful
+┃╠ ${prefix}cute
+┃╠ ${prefix}pretty
+┃╠ ${prefix}lesbian
+┃╠ ${prefix}noob
+┃╠ ${prefix}bastard
+┃╠ ${prefix}foolish
+┃╠ ${prefix}nerd
+┃╠ ${prefix}asshole
+┃╠ ${prefix}gay
+┃╠ ${prefix}smart
+┃╠ ${prefix}stubble
+┃╠ ${prefix}dog
+┃╠ ${prefix}horny
+┃╠ ${prefix}cunt
+┃╠ ${prefix}wibu
+┃╠ ${prefix}tictactoe
+┃╠ ${prefix}delttt
+┃╠ ${prefix}guess [option]
+┃╠ ${prefix}math [mode]
+┃╠ ${prefix}suitpvp [tag]
 ┃╠═══════✪「 CONVERTER 」
-┃╠🌑 ${prefix}toimage [reply stick]
-┃╠🌒 ${prefix}sticker [reply img|gif]
-┃╠🌓 ${prefix}emojimix [moji+moji]
-┃╠🌔 ${prefix}tovideo [reply img]
-┃╠🌕 ${prefix}togif [reply stick]
-┃╠🌖 ${prefix}tourl [reply img]
-┃╠🌗 ${prefix}tovn [reply aud]
-┃╠🌘 ${prefix}tomp3 [reply vn]
-┃╠🌙 ${prefix}toaudio [reply vid]
-┃╠🌑 ${prefix}ebinary [reply txt]
-┃╠🌒 ${prefix}dbinary [reply txt]
-┃╠🌓 ${prefix}styletext [text]
-┃╠🌔 ${prefix}smeme [text cap img]
+┃╠ ${prefix}toimage [reply stick]
+┃╠ ${prefix}sticker [reply img|gif]
+┃╠ ${prefix}emojimix [moji+moji]
+┃╠ ${prefix}tovideo [reply img]
+┃╠ ${prefix}togif [reply stick]
+┃╠ ${prefix}tourl [reply img]
+┃╠ ${prefix}tovn [reply aud]
+┃╠ ${prefix}tomp3 [reply vn]
+┃╠ ${prefix}toaudio [reply vid]
+┃╠ ${prefix}ebinary [reply txt]
+┃╠ ${prefix}dbinary [reply txt]
+┃╠ ${prefix}styletext [text]
+┃╠ ${prefix}smeme [text cap img]
 ┃╠══════✪「 DATABASE 」
-┃╠🖥️ ${prefix}setcmd
-┃╠🖥️ ${prefix}listcmd
-┃╠🖥️ ${prefix}delcmd
-┃╠🖥️ ${prefix}lockcmd
-┃╠🖥️ ${prefix}addmsg
-┃╠🖥️ ${prefix}listmsg
-┃╠🖥️ ${prefix}getmsg
-┃╠🖥️ ${prefix}delmsg
+┃╠ ${prefix}setcmd
+┃╠ ${prefix}listcmd
+┃╠ ${prefix}delcmd
+┃╠ ${prefix}lockcmd
+┃╠ ${prefix}addmsg
+┃╠ ${prefix}listmsg
+┃╠ ${prefix}getmsg
+┃╠ ${prefix}delmsg
 ┃╠══✪「 ANONYMOUS CHAT 」
-┃╠📝${prefix}anonymous
-┃╠📝${prefix}start
-┃╠📝${prefix}next
-┃╠📝${prefix}leave
+┃╠${prefix}anonymous
+┃╠${prefix}start
+┃╠${prefix}next
+┃╠${prefix}leave
 ┃╠═══✪「 VOICE CHANGER 」
-┃╠🎶${prefix}bass [reply aud]
-┃╠🎶${prefix}blown [reply aud]
-┃╠🎶${prefix}deep [reply aud]
-┃╠🎶${prefix}earrape [reply aud]
-┃╠🎶${prefix}fast [reply aud]
-┃╠🎶${prefix}fat [reply aud]
-┃╠🎶${prefix}nightcore [reply aud]
-┃╠🎶${prefix}reverse [reply aud]
-┃╠🎶${prefix}robot [reply aud]
-┃╠🎶${prefix}slow [reply aud]
-┃╠🎶${prefix}squirrel [reply aud]
+┃╠${prefix}bass [reply aud]
+┃╠${prefix}blown [reply aud]
+┃╠${prefix}deep [reply aud]
+┃╠${prefix}earrape [reply aud]
+┃╠${prefix}fast [reply aud]
+┃╠${prefix}fat [reply aud]
+┃╠${prefix}nightcore [reply aud]
+┃╠${prefix}reverse [reply aud]
+┃╠${prefix}robot [reply aud]
+┃╠${prefix}slow [reply aud]
+┃╠${prefix}squirrel [reply aud]
 ┃╠══════✪「 ISLAMIC 」
-┃╠☪️${prefix}juzamma
+┃╠${prefix}juzamma
+┃╠${prefix}iqra
+┃╠${prefix}alquran
+┃╠${prefix}hadith
+┃╠${prefix}tafsirsurah
 ┃╠══════✪「 HOROSCOPE 」
-┃╠🕉️${prefix}nomorhoki (indo)
-┃╠🕉️${prefix}artimimpi (indo)
-┃╠🕉️${prefix}artinama (indo)
-┃╠🕉️${prefix}ramaljodoh (indo)
-┃╠🕉️${prefix}ramaljodohbali (indo)
-┃╠🕉️${prefix}suamiistri (indo)
-┃╠🕉️${prefix}ramalcinta (indo)
-┃╠🕉️${prefix}cocoknama (indo)
-┃╠🕉️${prefix}pasangan (indo)
-┃╠🕉️${prefix}jadiannikah (indo)
-┃╠🕉️${prefix}sifatusaha (indo)
-┃╠🕉️${prefix}rezeki (indo)
-┃╠🕉️${prefix}pekerjaan (indo)
-┃╠🕉️${prefix}nasib (indo)
-┃╠🕉️${prefix}penyakit (indo)
-┃╠🕉️${prefix}tarot (indo)
-┃╠🕉️${prefix}fengshui (indo)
-┃╠🕉️${prefix}haribaik (indo)
-┃╠🕉️${prefix}harisangar (indo)
-┃╠🕉️${prefix}harisial (indo)
-┃╠🕉️${prefix}nagahari (indo)
-┃╠🕉️${prefix}arahrezeki (indo)
-┃╠🕉️${prefix}peruntungan (indo)
-┃╠🕉️${prefix}weton (indo)
-┃╠🕉️${prefix}karakter (indo)
-┃╠🕉️${prefix}keberuntungan (indo)
-┃╠🕉️${prefix}memancing (indo)
-┃╠🕉️${prefix}masasubur (indo)
-┃╠🕉️${prefix}zodiak (indo)
-┃╠🕉️${prefix}shio (indo)
+┃╠${prefix}nomorhoki (indo)
+┃╠${prefix}artimimpi (indo)
+┃╠${prefix}artinama (indo)
+┃╠${prefix}ramaljodoh (indo)
+┃╠${prefix}ramaljodohbali (indo)
+┃╠${prefix}suamiistri (indo)
+┃╠${prefix}ramalcinta (indo)
+┃╠${prefix}cocoknama (indo)
+┃╠${prefix}pasangan (indo)
+┃╠${prefix}jadiannikah (indo)
+┃╠${prefix}sifatusaha (indo)
+┃╠${prefix}rezeki (indo)
+┃╠${prefix}pekerjaan (indo)
+┃╠${prefix}nasib (indo)
+┃╠${prefix}penyakit (indo)
+┃╠${prefix}tarot (indo)
+┃╠${prefix}fengshui (indo)
+┃╠${prefix}haribaik (indo)
+┃╠${prefix}harisangar (indo)
+┃╠${prefix}harisial (indo)
+┃╠${prefix}nagahari (indo)
+┃╠${prefix}arahrezeki (indo)
+┃╠${prefix}peruntungan (indo)
+┃╠${prefix}weton (indo)
+┃╠${prefix}karakter (indo)
+┃╠${prefix}keberuntungan (indo)
+┃╠${prefix}memancing (indo)
+┃╠${prefix}masasubur (indo)
+┃╠${prefix}zodiak (indo)
+┃╠${prefix}shio (indo)
 ┃╚═════════════✪
 ┗━「 *Created By ${ownername}* 」━⭓`
     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -4239,10 +4239,9 @@ case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'Developer')
 await XeonBotInc.send5ButImg(from, `` + '' + ' ', `
 Thanks to
-LORD BUDDHA
-Deepak (Me)
-My family
-And All Friends Who Helped Assemble This Sexy Script !!!`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
+AllahAlmighty
+DARK DARE DEVI (Me)
+And My Brother Who Helped Assemble This Sexy Script !!!`,unicorn, [{"urlButton": {"displayText": "YouTube📍","url": `${myweb}`}},{"urlButton": {"displayText": "Script🔖","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "👤Owner👤","id": 'owner'}}] )
 break
             default:
                 if (budy.startsWith('=>')) {
