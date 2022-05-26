@@ -23,7 +23,8 @@ const { Primbon } = require('scrape-primbon')
 const primbon = new Primbon()
 const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom } = require('./lib/myfunc')
 const dgxeon = require('xfarr-api')
-
+const Pokedex = require('pokedex');
+const pokedex = new Pokedex();
 //rpg function\\
    const { 
      addInventoriDarah, 
@@ -1837,7 +1838,7 @@ break
                  let teks = `⬣ *PERSONAL CHAT LIST*\n\nTotal Chat : ${anu.length} Chat\n\n`
                  for (let i of anu) {
                      let nama = store.messages[i].array[0].pushName
-                     teks += `😈 *Name :* ${nama}\n😈 *User :* @${i.split('@')[0]}\n😈 *Chat :* https://wa.me/${i.split('@')[0]}\n\n────────────────────────\n\n`
+                     teks += `🐕 *Name :* ${nama}\n🐕 *User :* @${i.split('@')[0]}\n🐕 *Chat :* https://wa.me/${i.split('@')[0]}\n\n────────────────────────\n\n`
                  }
                  XeonBotInc.sendTextWithMentions(m.chat, teks, m)
              }
@@ -1847,7 +1848,7 @@ break
                  let teks = `⬣ *GROUP CHAT LIST*\n\nTotal Group : ${anu.length} Group\n\n`
                  for (let i of anu) {
                      let metadata = await XeonBotInc.groupMetadata(i)
-                     teks += `😈 *Name :* ${metadata.subject}\n😈 *Owner :* @${metadata.owner.split('@')[0]}\n😈 *ID :* ${metadata.id}\n😈 *Made :* ${moment(metadata.creation * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss')}\n😈 *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
+                     teks += `🐕 *Name :* ${metadata.subject}\n🐕 *Owner :* @${metadata.owner.split('@')[0]}\n🐕 *ID :* ${metadata.id}\n🐕 *Made :* ${moment(metadata.creation * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss')}\n🐕 *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
                  }
                  XeonBotInc.sendTextWithMentions(m.chat, teks, m)
              }
@@ -3038,7 +3039,7 @@ View List Of Messages With ${prefix}listmsg`)
 	        let seplit = Object.entries(global.db.data.database).map(([nama, isi]) => { return { nama, ...isi } })
 		let teks = '「 DATABASE LIST 」\n\n'
 		for (let i of seplit) {
-		    teks += `😈 *Name :* ${i.nama}\n😈 *Type :* ${getContentType(i.message).replace(/Message/i, '')}\n────────────────────────\n\n`
+		    teks += `🐕 *Name :* ${i.nama}\n🐕 *Type :* ${getContentType(i.message).replace(/Message/i, '')}\n────────────────────────\n\n`
 	        }
 	        reply(teks)
 	    }
@@ -3274,6 +3275,13 @@ break
                     	XeonBotInc.sendMessage(`923008354428@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
 Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
+                    }
+                    break
+                    case 'pokedex': case'pokemon' : {
+                        if(!text) return reply(`no pokemon was mentioned`)
+                        let pokemon = pokedex.pokemon(text);
+                        let teks = `Name: ${pokemon.name} \n Id: ${pokemon.id} \n Height: ${pokemon.height} \n Weight: ${pokemon.weight} Order: ${pokemon.order}`;
+                        XeonBotInc.sendMessage(m.chat,teks,m)
                     }
                     break
                     case 'tes': case 'test': case 'alive': case 'bot': case 'robot': case 'TJ ULTRA': case 'doge':{
