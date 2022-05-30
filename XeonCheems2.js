@@ -3281,7 +3281,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
                         if(!text) return reply(`no pokemon was mentioned`)
                         let pokemon = pokedex.pokemon(text);
                         let teks = `Name: ${pokemon.name} \n Id: ${pokemon.id} \n Height: ${pokemon.height} \n Weight: ${pokemon.weight} Order: ${pokemon.order}`;
-                        XeonBotInc.sendMessage(m.chat,teks,m)
+                        Return reply(teks)
                     }
                     break
                     case 'tes': case 'test': case 'alive': case 'bot': case 'robot': case 'TJ ULTRA': case 'doge':{
