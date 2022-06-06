@@ -1,10 +1,10 @@
-<h1 align="center">ꪶ𝗖𝗵𝗲𝗲𝗺𝘀 𝗕𝗼𝘁-𝗠𝗗 𝗩𝟮ꫂ<br></h1>
+<h1 align="center">(TJ 𝗕𝗼𝘁-𝗠𝗗 𝗩𝟮ꫂ<br></h1>
 <p align="center">
-  <img src="https://telegra.ph/file/8adfac9d34c43ce444fbf.jpg" width="540" height="300" />
+  <img src="https://images.app.goo.gl/m42x6uWKct7fRbr27" width="540" height="300" />
 </p>
 
 <p align="center">
-Cheems Bot Multi Device is a automated whatsapp bot created by <a href="https://github.com/DGDEEPAK" target="_blank">Deepak</a> using <a href="https://github.com/adiwajshing/Baileys" target="_blank">Baileys</a> and <a href="https://github.com/nodejs" target="_blank">Nodejs</a>. Dont forget to give a star bro.
+TJ Bot Multi Device is a automated whatsapp bot created by <a href="https://github.com/DGDEEPAK" target="_blank">Deepak</a> using <a href="https://github.com/adiwajshing/Baileys" target="_blank">Baileys</a> and <a href="https://github.com/nodejs" target="_blank">Nodejs</a>. Dont forget to give a star bro.
 </p>
 
 <p align="center">
