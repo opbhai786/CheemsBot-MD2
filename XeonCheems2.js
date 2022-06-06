@@ -926,7 +926,7 @@ const CoinGeckoClient = new CoinGecko();
         var _res = _temp.length == 0 ? [] : _temp[0];
         _coinList[i] = _res.last;
     })
-    reply(`*Crypto Price Update* \n ₿TC: ${_coinList.BTC} \n ΞTH: ${_coinList.ETH} \n ✕RP: ${_coinList.XRP} \n ŁTC: ${_coinList.LTC} \n ×LM: ${_coinList.XLM} \n USD₮: ${_coinList.USDT} \n ÐOGE: ${_coinList.DOGE} \n APE: ${_coinList.APE} \n Creator: 923008354428`);
+    reply(`*Crypto Price Update* \n ₿TC: ${_coinList.BTC} \n ΞTH: ${_coinList.ETH} \n ✕RP: ${_coinList.XRP} \n ŁTC: ${_coinList.LTC} \n ✗ŁM: ${_coinList.XLM} \n USD₮: ${_coinList.USDT} \n ÐOGE: ${_coinList.DOGE} \n APE: ${_coinList.APE} \n Creator: 923008354428`);
 }
 		setInterval(price,3600000);
     price()
