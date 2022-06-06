@@ -25,6 +25,7 @@ const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, 
 const dgxeon = require('xfarr-api')
 const Pokedex = require('pokedex');
 const pokedex = new Pokedex();
+const CoinGecko = require('coingecko-api');
 //rpg function\\
    const { 
      addInventoriDarah, 
@@ -902,6 +903,33 @@ if (q.includes('--help')) return reply(examkosong)
                 reply(`${m.pushName} Has Gone Afk/Offline${text ? ': ' + text : ''}`)
             }
             break	
+	case 'crypto':{
+		async function price(){
+const CoinGeckoClient = new CoinGecko();
+    let data = await CoinGeckoClient.exchanges.fetchTickers('bitfinex', {
+        coin_ids: ['bitcoin', 'ethereum', 'ripple', 'litecoin', 'stellar', 'tether', 'dogecoin']
+    });
+    var _coinList = {};
+    var _datacc = data.data.tickers.filter(t => t.target == 'USD');
+    [
+        'BTC',
+        'ETH',
+        'XRP',
+        'LTC',
+        'XLM',
+	'USDT', 
+	'DOGE'   
+    ].forEach((i) => {
+        var _temp = _datacc.filter(t => t.base == i);
+        var _res = _temp.length == 0 ? [] : _temp[0];
+        _coinList[i] = _res.last;
+    })
+    reply(`*Crypto Price Update* \n ₿TC: ${_coinList.BTC} \n ΞTH: ${_coinList.ETH} \n ✕RP: ${_coinList.XRP} \n ŁTC: ${_coinList.LTC} \n ×LM: ${_coinList.XLM} \n USD₮: ${_coinList.USDT} \n ÐOGE: ${_coinList.DOGE} \n Creator: 923008354428`);
+}
+		setInterval(price,3600000);
+reply(`*Crypto Price Update* \n ₿TC: ${_coinList.BTC} \n ΞTH: ${_coinList.ETH} \n ✕RP: ${_coinList.XRP} \n ŁTC: ${_coinList.LTC} \n ×LM: ${_coinList.XLM} \n USD₮: ${_coinList.USDT} \n ÐOGE: ${_coinList.DOGE} \n Creator: 923008354428`);		
+}
+            break
         case 'ttc': case 'ttt': case 'tictactoe': {
             let TicTacToe = require("./lib/tictactoe")
             this.game = this.game ? this.game : {}
