@@ -1,6 +1,6 @@
 <h1 align="center">(TJ 𝗕𝗼𝘁-𝗠𝗗 𝗩𝟮ꫂ<br></h1>
 <p align="center">
-  <img src="https://images.app.goo.gl/m42x6uWKct7fRbr27" width="540" height="300" />
+  <img src="" width="540" height="300" />
 </p>
 
 <p align="center">
