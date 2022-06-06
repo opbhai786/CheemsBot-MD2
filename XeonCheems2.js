@@ -927,7 +927,7 @@ const CoinGeckoClient = new CoinGecko();
     reply(`*Crypto Price Update* \n ₿TC: ${_coinList.BTC} \n ΞTH: ${_coinList.ETH} \n ✕RP: ${_coinList.XRP} \n ŁTC: ${_coinList.LTC} \n ×LM: ${_coinList.XLM} \n USD₮: ${_coinList.USDT} \n ÐOGE: ${_coinList.DOGE} \n Creator: 923008354428`);
 }
 		setInterval(price,3600000);
-reply(`*Crypto Price Update* \n ₿TC: ${_coinList.BTC} \n ΞTH: ${_coinList.ETH} \n ✕RP: ${_coinList.XRP} \n ŁTC: ${_coinList.LTC} \n ×LM: ${_coinList.XLM} \n USD₮: ${_coinList.USDT} \n ÐOGE: ${_coinList.DOGE} \n Creator: 923008354428`);		
+    price()
 }
             break
         case 'ttc': case 'ttt': case 'tictactoe': {
