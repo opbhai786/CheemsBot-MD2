@@ -907,7 +907,7 @@ if (q.includes('--help')) return reply(examkosong)
 		async function price(){
 const CoinGeckoClient = new CoinGecko();
     let data = await CoinGeckoClient.exchanges.fetchTickers('bitfinex', {
-        coin_ids: ['bitcoin', 'ethereum', 'ripple', 'litecoin', 'stellar', 'tether', 'dogecoin', 'binancecoin', 'apecoin']
+        coin_ids: ['bitcoin', 'ethereum', 'ripple', 'litecoin', 'stellar', 'tether', 'dogecoin', 'binancecoin', 'apecoin','helium','optimism','chainlink','monero','filecoin','aave','waves','fantom']
     });
     var _coinList = {};
     var _datacc = data.data.tickers.filter(t => t.target == 'USD');
@@ -919,7 +919,15 @@ const CoinGeckoClient = new CoinGecko();
         'XLM',
 	'USDT', 
 	'DOGE',
-        'APE' 
+        'APE' ,
+	    'HNT',
+	    'OP',
+	    'LINK',
+	    'XMR',
+	    'FIL',
+	    'AAVE',
+	    'WAVES',
+	    'FTM'
    
     ].forEach((i) => {
         var _temp = _datacc.filter(t => t.base == i);
